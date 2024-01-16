@@ -42,10 +42,15 @@
     }
     .content {
       background-image: url('/plant.jpeg');
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
     }
     .logo {
       /*text-decoration: none;*/
-      
+      width: 50px;
+      border-radius: 25px;
       color: aliceblue;
       font-weight: 700;
       font-size: larger;
@@ -83,7 +88,7 @@
     .navbar a:hover::before {
       width: 100%;
     }
-    .footer {
+    footer {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -96,7 +101,7 @@
       width: 100%;
       text-align: center;
     }
-    .footer ul {
+    footer ul {
       margin: 0;
       padding: 0;
       list-style: none;
@@ -106,7 +111,7 @@
       font-size: 20;
       color: white;
     }
-    .li {
+    li {
       text-decoration: none;
       color: whitesmoke;
     }
@@ -116,11 +121,10 @@
 <body>
   <!--nav bar-->
   <header class="nav-header">
-  <img src="/IMG_9067/logo.png" alt="" class="logo">
+  <img src="logo.jpeg" alt="" class="logo">
   <!--<a href="#" class="logo">logo.</a>-->
   
   <nav class="navbar">
-<a href="#MENU">MENU</a>
 <a href="#ABOUT US">ABOUT US</a>
 <a href="#CATALOG">CATALOG</a>
 <!-- <a href="#">gallery</a> -->
