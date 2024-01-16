@@ -24,7 +24,6 @@
       background-size: cover;
       text-align: center;
       font-size: 20px;
-    
     }
     .image {
       display: block;
@@ -44,22 +43,94 @@
     .content {
       background-image: url('/plant.jpeg');
     }
+    .logo {
+      /*text-decoration: none;*/
+      
+      color: aliceblue;
+      font-weight: 700;
+      font-size: larger;
+    }
+    .nav-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      padding: 20px 50px;
+      background-color: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index:100;
+    }
+    .navbar a {
+      position: relative;
+      font-size: small;
+      font-weight: 500;
+      color: aliceblue;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    .navbar a::before {
+      content:'';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: aliceblue;
+      transition: .3;
+    }
+    .navbar a:hover::before {
+      width: 100%;
+    }
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgba(93, 97, 149, 0.26);
+      color: whitesmoke;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .footer ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 20;
+      color: white;
+    }
+    .li {
+      text-decoration: none;
+      color: whitesmoke;
+    }
   </style>
 </head>
 
 <body>
-  <nav>
-    <div>
-</h1>LOGO</h1> <br>
-<a href="MENU.html">MENU</a>
-<a href="ABOUT US.html">ABOUT US</a>
-<a href="CATALOG.html">CATALOG</a>
-<a href="CONTACT US.html">CONTACT US</a>
-    </div>
+  <!--nav bar-->
+  <header class="nav-header">
+  <img src="/IMG_9067/logo.png" alt="" class="logo">
+  <!--<a href="#" class="logo">logo.</a>-->
+  
+  <nav class="navbar">
+<a href="#MENU">MENU</a>
+<a href="#ABOUT US">ABOUT US</a>
+<a href="#CATALOG">CATALOG</a>
+<!-- <a href="#">gallery</a> -->
+<a href="#CONTACT US">CONTACT US</a>
   </nav>
   
+  </header>
+  
   <!--section one-->
-  <section class="profile">
+  <section id="MENU" class="profile">
     <div>
       <img class="image" src="/flowers.jpeg">
       <p>nana, an aspiring web developer.</p>
@@ -67,7 +138,7 @@
   </section>
   
   <!--section two-->
-  <section class="content">
+  <section id="ABOUT US" class="content">
     <div>
       <h2>ABOUT US</h2>
       <p>this is an assignment,which is on html nav bar practical</p>
@@ -79,7 +150,7 @@
   </section>
   
   <!--section three-->
-  <section class="catalog">
+  <section id="CATALOG" class="catalog">
     <div>
       <h2>CATALOG</h2>
       <p>HTML,NAV BAR,CSS,README.</p>
@@ -87,13 +158,22 @@
   </section>
   
   <!--section four-->
-  <section class="contact">
+  <section id="CONTACT US" class="contact">
     <div>
       <h2>CONTACT US</h2>
       <p>Email: firdausiisa507@gmail.com</p>
       <p>Phone:(812) 007-4377</p>
     </div>
   </section>
-</body>
 
+<footer>
+ <h2>RELATED SITE</h2>
+   <ul>
+     <li>abdulconsole</li>
+     <li>ismaila isah</li>
+     <li>soum soum</li>
+   </ul>
+</footer>
+
+</body>
 </html>
